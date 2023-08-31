@@ -1,0 +1,137 @@
+* {
+  box-sizing: border-box;
+  font-family: 'Quicksand', sans-serif;
+}
+
+body {
+  margin: 10px 0 0 0 ;
+  background-color: rgb(226, 226, 226);
+  position: relative;
+
+}
+
+.cv-page{
+  background-color: white;
+  width: 665px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%);
+  margin-bottom: 25px;
+}
+
+.name-container {
+  display: flex;
+  
+  
+}
+
+.name-container, .gridbox-container{
+  margin: 10px 15px 0px 15px
+}
+
+.profile-image{
+  width: 300px;
+  border-top-right-radius: 150px;
+  border-top-left-radius: 150px;
+  border: 1px solid black;
+
+}
+
+.name-container-item-2{
+  margin-left: 15px;
+  align-self: center;
+  text-align: center;
+  
+}
+
+.name{
+  font-size: 40px;
+  margin: 0px;
+  padding-bottom: 10px;
+  border-bottom: 1px solid black;
+  width: 320px;
+}
+
+.profession{
+  margin: 10px 0 0 0;
+}
+
+.gridbox-container{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  margin-bottom: 15px;
+}
+
+.gridbox-item{
+  width: 250px;
+  margin-right: 20px;
+}
+
+.subtitle-for-section{
+  border-bottom: 1px solid black;
+  width: 235px;
+  margin-bottom:15px;
+}
+
+li {
+  font-size: 14px;
+
+
+}
+
+ul {
+  padding-left: 15px;
+  width: 225px;
+  margin-top: 15px;
+
+}
+
+.outer-bar{
+  display: inline-block;
+  width: 130px;
+  height: 10px;
+  border: 1px solid black;
+  border-radius:5px ;
+}
+
+.inner-bar{
+  display: block;
+  width:70px ;
+  height: 8px;
+  background-color: rgb(8, 221, 79);
+  border-radius: 4px;
+}
+
+.inner-html{
+  width: 100px;
+  background-color: rgb(115, 223, 53);
+}
+
+.inner-css{
+  width: 110px;
+  background-color: rgb(11, 212, 88);
+}
+
+.inner-js{
+  width: 45px;
+  background-color: rgb(228, 206, 10);
+}
+
+
+.all-text{
+  font-weight:700;
+}
+
+.experience-list, p{
+  margin: 3px 0px 3px 0px;
+}
+
+a{
+  color: rgb(80, 80, 80);
+}
+
+
+
+
+
