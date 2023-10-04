@@ -2,6 +2,12 @@
   box-sizing: border-box;
 }
 
+body{
+  margin: 0;
+  padding: 0;
+  
+}
+
 html{
   font-family: 'Sen', sans-serif;
 }
@@ -225,4 +231,192 @@ header{
   align-items: center;
 }
 
+/* info-section starts here */
 
+.info-section{
+  width: 1170px;
+  height: 450px;
+  display: flex;
+  margin: 201px 0 0 0 ;
+
+}
+
+.aside-info > div{
+  display: flex;
+  flex-direction: column;
+  margin: 20px 0 0 0;
+}
+
+.aside-info{
+  margin-right: 100px;
+}
+
+.heading-i{
+  color: #13253A;
+  font-size: 38px;
+  font-weight: 700;
+  width: 360px;
+  margin: 0 0 20px 0;
+}
+
+
+
+.list-item-info{
+  display: flex;
+  align-items: center;
+  margin-bottom: 12px;
+}
+
+.list-item-info:last-of-type{
+  margin: 0;
+}
+
+.list-item-info  > span:first-child{
+  height: 16px;
+  width: 16px;
+  display: block;
+  margin-right: 15px;
+
+  
+}
+
+.list-item-info > span:nth-child(2){
+  color: #13253A;
+  font-size: 15px;
+  font-weight: 500;
+  line-height: 27px;
+  width: 439px;
+}
+
+/* the sign up section starts here */
+
+.sign-up{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 1440px;
+  height: 434px;
+  background: #FF7F57;
+  margin: 0 auto;
+}
+
+.subtitle{
+  color: #FFF;
+  font-weight: 500;
+  margin: 100px 0 5px 0;
+  }
+
+.sign-up > h1{
+  color: #F4F6F7;
+  text-align: center;
+  font-size: 44px;
+  font-weight: 700;
+  letter-spacing: -0.5px;
+  width: 970px;
+  margin: 0 0 10px 0;
+}
+
+.white-text{
+  color: #FFF;
+  text-align: center;
+  line-height: 27px;
+  width: 770px;
+  margin: 0 0 20px 0;
+}
+
+.get-started{
+  width: 336px;
+  height: 60px;
+  background-color: #2557AB;
+  border: none;
+  color: #FFF;
+  color: #FFF;
+  text-align: center;
+  font-size: 17px;
+  font-weight: 600;
+  padding: 0;
+  margin-bottom: 100px;
+  cursor: pointer;
+  border-radius: 3px;
+}
+
+/* here starts the contact form section */
+
+.contact-form{
+  width: 1440px;
+  height: 770px;
+  margin: 0 auto;
+  background-color: #11364E;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.contact-form > form{
+  display: flex;
+  flex-direction: column;
+}
+
+.contact-form > h1{
+  color: #FFF;
+  text-align: center;
+  font-size: 38px;
+  letter-spacing: -0.5px;
+  margin: 140px 0 30px 0;
+}
+
+label[for]{
+  color: #FFF;
+  margin-bottom: 10px;
+  font-size: 13px;
+  font-weight: 500;
+  width: 370px;
+  }
+
+.contact-form > form > input{
+  margin-bottom: 40px;
+  border: none;
+  background-color: #11364E;
+  width: 370px;
+  color: #FFF;
+  font-weight: 500;
+  padding: 0 0 6px 0;
+  border-bottom:1px solid rgba(255, 255, 255, 0.25);
+}
+
+.contact-form > form > textarea{
+  height: 92px;
+  width: 370px;
+  background-color: #11364E;
+  border: none;
+  color: #FFF;
+  font-weight: 500;
+  border-bottom:1px solid rgba(255, 255, 255, 0.25);
+  margin-bottom: 36px;
+}
+
+.contact-form > form > button{
+  border-radius: 3px;
+  background-color: #FF7F57;
+  width: 370px;
+  height: 60px;
+  color: #FFF;
+  text-align: center;
+  font-weight: 600;
+  font-size: 17px;
+  border: none;
+  cursor: pointer;
+
+}
+
+/* copywrite section */
+
+.copyWrite{
+  background-color: #13253A;
+  width: 1440px;
+  margin: 0 auto;
+  color: #FFF;
+  text-align: center;
+  padding: 16px 0 15px 0;
+  font-size: 12px;
+}

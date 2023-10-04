@@ -15,9 +15,9 @@
     <nav class="nav-bar">
       <div class="logo"><img src="../lesson6/lesson6_images/logo.svg"  alt="logo"></div>
       <div class="nav-right">
-        <a href="#">Services</a>
-        <a href="#">About</a>
-        <a href="#" id="contact">Contact</a>
+        <a href="#services-link">Services</a>
+        <a href="#about-us-link">About</a>
+        <a href="#contact-us-link" id="contact">Contact</a>
       </div>
     </nav>
     <!-- Bottom section of header -->
@@ -33,9 +33,9 @@
       </div>
     </section>
   </header>
-  <!-- End of Header -->
+  <!-- Start of Our Services section -->
   <main>
-    <section class="our-services">
+    <section class="our-services" id="services-link">
       <p class="sub-heading">Our Services</p>
       <h1 class="heading-os">Why choose Agency theme</h1>
       <div>
@@ -48,7 +48,6 @@
           <img src="../lesson6/lesson6_images/icon-award-winning-design.svg" alt="award medal" width="64">
           <span>Award Winning Design</span>
           <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas hendrerit in erat nec fermentum. Aliquam rutrum vestibulum.</p>
-
         </div>
         <div class="services">
           <img src="../lesson6/lesson6_images/icon-online-support.svg" alt="lady with a laptop" width="64">
@@ -57,7 +56,7 @@
         </div>
       </div>
     </section>
-    <!-- End of Our Services section-->
+    <!-- Here starts the Experience section -->
     <section class="experience-section">
       <div class="experience">
         <span class="numbers">7.5k<span class="plus">+</span></span>
@@ -66,15 +65,14 @@
       <div class="experience">
         <span class="numbers">15yrs<span class="plus">+</span></span>
         <span>Years of Experience</span>
-
       </div>
       <div class="experience">
         <span class="numbers">6.2k<span class="plus">+</span></span>
         <span>Customers Served</span>
       </div>
     </section>
-    <!-- Here starts About us section -->
-    <section class="about-us">
+    <!-- Here starts the About us section -->
+    <section class="about-us" id="about-us-link">
       <p class="sub-heading">Robust Agency</p>
       <h1 class="heading-au">About Us</h1>
       <div class="text-container">
@@ -86,9 +84,8 @@
         <div class="right-text">
           <p class="text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi iaculis nisl vulputate justo consequat tempor. Nam gravida sed ipsum in pellentesque. Cras pellentesque placerat cursus. Ut ultrices ultricies finibus. Donec rutrum felis convallis, efficitur tellus sit amet, tristique metus. Integer eget sagittis urna.
           </p>
-
-          <p class="text">Aenean et facilisis mi, ut posuere eros. Vivamus nec velit at diam pretium blandit id nec urna. Aenean dignissim vehicula sapien ut vehicula. Aliquam gravida metus non ullamcorper vestibulum. Mauris lobortis purus at diam posuere, at molestie massa lobortis.</p>
-
+          <p class="text">Aenean et facilisis mi, ut posuere eros. Vivamus nec velit at diam pretium blandit id nec urna. Aenean dignissim vehicula sapien ut vehicula. Aliquam gravida metus non ullamcorper vestibulum. Mauris lobortis purus at diam posuere, at molestie massa lobortis.
+          </p>
         </div>
       </div>
 
@@ -100,11 +97,59 @@
         <img src="../lesson6/lesson6_images/logo-target.png" alt="target brand logo">
       </div>
     </section>
-    
 
-
+    <!-- Here starts the Info Section -->
+    <section class="info-section">
+      <aside class="aside-info">
+      <h1 class="heading-i">Please Relax, we will do the work.</h1>
+      <p class="text" style="width:480px;">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi iaculis nisl vulputate justo consequat tempor. Nam gravida sed ipsum in pellentesque. Cras pellentesque placerat cursus.</p>
+      <div> 
+        <span class="list-item-info">
+          <span><img src="../lesson6/lesson6_images/icon-tick.svg"></span>
+          <span>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit
+          </span>
+        </span>
+        <span class="list-item-info">
+          <span><img src="../lesson6/lesson6_images/icon-tick.svg"></span>
+          <span>
+            Morbi iaculis nisl vulputate justo consequat tempor.
+          </span>
+        </span>
+        <span class="list-item-info">
+          <span><img src="../lesson6/lesson6_images/icon-tick.svg"></span>
+          <span>
+            Nam gravida sed ipsum in pellentesque.
+          </span>  
+        </span>
+      </div>  
+      </aside>
+      <img src="../lesson6/lesson6_images/-g-Bitmap.png" alt="lady using a laptop" width="600px"
+      height="280px">
+    </section>
   </main>
   <footer>
+    <!-- Here starts the sign up section -->
+    <section class="sign-up">
+      <p class="subtitle">An Agency That Helps You</p>
+      <h1>Start Building your Website today</h1>
+      <p class="white-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer ultrices purus lectus, et accumsan nibh suscipit sed. Nullam lorem dui, congue pharetra posuere vel, imperdiet ac lorem.</p>
+      <button class="get-started">Get Started Now</button>
+    </section>
+    <!-- here starts the contact form section -->
+    <section class="contact-form" id="contact-us-link">
+      <h1>Contact Us</h1>
+      <form action="" method="get">
+        <label for="name">Full Name</label>
+        <input type="text" name="name" id="name" required placeholder="Ram Kaji">
+        <label for="email">Your Email Address</label>
+        <input type="email" name="email" id="email"  placeholder="hello@lastdoor.store">
+        <label for="message">Your Message</label>
+        <textarea name="message" id="message" placeholder="Type your message here..."></textarea>
+        <button type="submit">Submit Your Message</button>
+      </form>
+    </section>
+    <section class="copyWrite">Copyright © 2018 LastDoor.Store</section>
 
   </footer> 
 </body>
