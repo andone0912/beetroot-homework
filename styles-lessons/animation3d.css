@@ -1,0 +1,66 @@
+*{
+  box-sizing: border-box;
+}
+
+
+body{
+  padding: 0;
+  margin: 0;
+  height: 100vh;
+}
+
+section{
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.object {
+  position: relative;
+  width: 150px;
+  height: 150px;
+}
+
+.object > div{
+  position: absolute;
+  width: 150px;
+  height: 150px;
+  border: 2px solid black; 
+  
+}
+
+ .object .diamond-shape{
+  transform: rotate(45deg);
+  background:linear-gradient(90deg, wheat , blue);
+  border-width: 1.5px;
+  backface-visibility: hidden;
+  animation: spin2 4s linear 0s infinite;
+}
+
+.diamond-shape-2{
+  transform: perspective(170px) rotateY(85deg) rotate(45deg);
+  background: linear-gradient(bisque , orangered);
+  z-index: 1;
+  backface-visibility: hidden;
+  animation: spin 4s linear 0s infinite;
+}
+
+@keyframes spin {
+
+  0% {transform: perspective(170px) rotateY(85deg) rotate(45deg);}
+  /*50% {backface-visibility: visible;}*/
+  100%{
+    transform: perspective(none) rotateY(445deg) rotate(45deg);
+    backface-visibility: hidden;
+  }
+  
+}
+
+@keyframes spin2 {
+  0%{transform: perspective(none) rotateY(0deg) rotate(45deg);}
+  /*50% {backface-visibility: visible;}*/
+  100%{transform: perspective(170px) rotateY(360deg) rotate(45deg);}
+  
+}
