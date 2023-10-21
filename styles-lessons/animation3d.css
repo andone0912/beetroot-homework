@@ -1,66 +1,53 @@
-*{
-  box-sizing: border-box;
+
+
+html {
+  height: 100%;
 }
-
-
-body{
-  padding: 0;
-  margin: 0;
-  height: 100vh;
-}
-
-section{
+body {
   width: 100%;
   height: 100%;
   display: flex;
-  justify-content: center;
   align-items: center;
+  justify-content: center;
 }
 
-.object {
+.solid {
   position: relative;
-  width: 150px;
-  height: 150px;
-}
+  width: 200px;
+  height: 200px;
+  animation: spin 16s infinite linear;
+  transform-style: preserve-3d;}
 
-.object > div{
-  position: absolute;
-  width: 150px;
-  height: 150px;
-  border: 2px solid black; 
-  
-}
+.side {
+    position: absolute;
+    left: 0;
+    bottom: 50%;
+    height: 173.2px;
+    width: 200px;
+    background-image: url('data:image/svg+xml;base64,PHN2ZyBpZD0idHJpYW5nbGUiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgdmlld0JveD0iMCAwIDMzNi45MiAyOTEuNzUiPgoJPHBvbHlnb24gcG9pbnRzPSIzMzQuNzUgMjkwLjUgMi4xNyAyOTAuNSAxNjguNDcgMi41IDMzNC43NSAyOTAuNSIgZmlsbD0icmdiYSgxMzMsMTMzLDI1NSwwLjgpIiBzdHJva2U9IiMwMDAiIHN0cm9rZS13aWR0aD0iMi41Ii8+Cjwvc3ZnPg==');
+    transform-origin: 50% 100%;
+  }
 
- .object .diamond-shape{
-  transform: rotate(45deg);
-  background:linear-gradient(90deg, wheat , blue);
-  border-width: 1.5px;
-  backface-visibility: hidden;
-  animation: spin2 4s linear 0s infinite;
-}
+  @for $i from 1 through 8 {
+    $tilt2: $tilt;
+    @if $i > 4 {
+      $tilt2: 180deg - $tilt;
+    }
+    .side:nth-child(#{$i}) {
+      transform: 
+        rotateY(#{$i * 90deg}) 
+        translateZ($triwidth) 
+        rotateX($tilt2);
+      border-bottom-color: #{rgba(random(255),random(255),random(255),0.4)};
+    }
+  }
 
-.diamond-shape-2{
-  transform: perspective(170px) rotateY(85deg) rotate(45deg);
-  background: linear-gradient(bisque , orangered);
-  z-index: 1;
-  backface-visibility: hidden;
-  animation: spin 4s linear 0s infinite;
-}
+
 
 @keyframes spin {
-
-  0% {transform: perspective(170px) rotateY(85deg) rotate(45deg);}
-  /*50% {backface-visibility: visible;}*/
-  100%{
-    transform: perspective(none) rotateY(445deg) rotate(45deg);
-    backface-visibility: hidden;
+  0% { 
+    transform: rotateX(0deg);
   }
-  
-}
-
-@keyframes spin2 {
-  0%{transform: perspective(none) rotateY(0deg) rotate(45deg);}
-  /*50% {backface-visibility: visible;}*/
-  100%{transform: perspective(170px) rotateY(360deg) rotate(45deg);}
-  
-}
+  100% { 
+    transform: rotateY(360deg);
+  }}
