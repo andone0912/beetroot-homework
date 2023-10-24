@@ -138,6 +138,7 @@ nav{
   font-family: Aleo;
   font-size: 0.875rem;
   text-transform: uppercase;
+  text-decoration: none;
   }
 
 .nav-left span {
@@ -147,4 +148,77 @@ nav{
   font-weight: 700;
   letter-spacing: 2.4px;
   text-transform: uppercase;
+}
+
+.why-choose-us{
+  background-image: url(../lesson10-test/lesson10-images/second-photo.png);
+  background-size: cover;
+  width: 100%;
+  height: 35.7vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.choose-us-content{
+  width: 58.35%;
+  height: 65.7%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.choose-us-content > aside {
+  color: #FFF;
+  width: 50.5%;
+  display: flex;
+  flex-direction: column;
+  row-gap: 50px;
+}
+
+.choose-us-content > aside > span{
+  color: #FFF;
+  font-family: Aleo;
+  font-size: 2.25rem;
+}
+
+.paragraphs-choose-us{
+  height: 36%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  color: #E8E8E8;
+  font-family: Josefin Sans;
+  font-size: 1rem;
+  line-height: 26px;
+  letter-spacing: 1.6px;
+}
+
+.choose-us-content > aside > .button-choose-us{
+  background-color:#496BFE;
+  width: 228px;
+  height: 63px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.choose-us-content > aside > .button-choose-us > span{
+  color: #FFF;
+  font-family: Aleo;
+  font-size: 1rem;
+  letter-spacing: 1.2px;
+  text-transform: uppercase;
+}
+
+.paragraphs-choose-us > p {
+  margin: 0;
+}
+
+.images-right > div{
+  width: 440px;
+}
+
+.images-right > div:nth-child(2){
+  text-align: end;
 }
