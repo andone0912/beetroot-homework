@@ -9,35 +9,40 @@ body{
 }
 
 #content-container{
-  width: 1110px;
+  max-width: 1110px;
   margin: 60px auto 50px auto;
 }
 
 header > nav{
   display: flex;
+  justify-content: space-between;
   width: 100%;
 }
 
-nav > span{
+nav > div > span{
   color: #111;
   font-size: 1.125rem;
   font-weight: 700;
   letter-spacing: -0.346px;
 }
 
+nav > div{
+  margin-right: 10px;
+}
+
 .Projects{
-  margin: 0 29px 0 856px;
+  margin-right: 29px;
 }
 
 .information{
-  width: 100%;
+  max-width: 1032px;
   display: flex;
+  justify-content: space-between;
   margin-top: 100px;
 }
 
 .information > aside{
-  margin-right: 190px;
-  width: 635px;
+  max-width: 635px;
 }
 
 .information > aside > h4{
@@ -64,6 +69,7 @@ nav > span{
   display: flex;
   width: 207px;
   height: 228px;
+  margin-right: 5px;
   justify-content: flex-end;
   flex-direction: column;
 }
@@ -87,18 +93,27 @@ nav > span{
 .different-photos{
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
-  width: 100%;
+  max-width: 1110px;
   margin-top:144px ;
   gap: 20px;
 }
 
+.first-column, .second-column, .third-column, .fourth-hidden-column{
+  max-width: 357px;
+  overflow:hidden;
+}
+
 .small-photo{
-  width: 357px;
+  max-width: 357px;
   padding-left: 7px;
 }
 
+.fourth-hidden-column{
+  display: none;
+}
+
 .small-photo-special{
-  width: 356px;
+  max-width: 356px;
   padding: 0 3px 0 3px;
 }
 
@@ -106,11 +121,16 @@ img[src*="rw1"], img[src*="rw2"], img[src*="rw3"]{
   margin-bottom:20px ;
 }
 
+img[src*="rw"]{
+  max-width: 357px;
+}
+
 .service-list{
-  width: 1079px;
+  max-width: 1079px;
   margin: 91px 0 0 1px;
   display: flex;
   align-items: center;
+  justify-content: space-between;
 }
 
 .service-list > span{
@@ -119,12 +139,11 @@ img[src*="rw1"], img[src*="rw2"], img[src*="rw3"]{
   font-size: 1.75rem;
   font-weight: 700;
   line-height: 38px;
-  margin-right: 94px;
   height: 106px;
 
 }
 
-.service-list > div > span{
+.service-list > div > div > span{
   color: #111;
   font-size: 1.125rem;
   opacity: 0.6;
@@ -132,17 +151,22 @@ img[src*="rw1"], img[src*="rw2"], img[src*="rw3"]{
 
 .service-list > div{
   display: flex;
+  width: 351px;
+  justify-content: space-between;
+}
+
+.service-list > div > div{
+  display: flex;
   flex-direction: column;
   gap: 10px;
   width: 150px;
 }
-.service-list > div:last-child{
+.service-list > div >div:last-child{
   width: 131px;
-  margin-left: 70px;
 }
 
 .achievements{
-  width:1110px; 
+  max-width:1110px; 
   display: flex;
   flex-direction: column;
   padding-top: 48px;
@@ -153,6 +177,7 @@ img[src*="rw1"], img[src*="rw2"], img[src*="rw3"]{
   height: 411px;
   width: 100%;
   display: flex;
+  justify-content: space-between;
   border-bottom: 2px solid #D8D8D8;
 }
 
@@ -166,7 +191,6 @@ img[src*="rw1"], img[src*="rw2"], img[src*="rw3"]{
   font-weight: 700;
   display: block;
   width: 198px;
-  margin-right: 276px;
   }
 
 .upper-section-title{
@@ -175,18 +199,22 @@ img[src*="rw1"], img[src*="rw2"], img[src*="rw3"]{
   font-weight: 700;
   display: block;
   width: 121px;
-  margin-right: 353px;
 }
 
-.upper-section > div, .lower-section > div{
+.upper-section > div, .lower-section > div {
+  display: flex;
+  justify-content: space-between;
+  width: 635px;
+}
+
+.upper-section > div > div, .lower-section > div > div{
   display: flex;
   flex-direction: column;
   row-gap: 167px;
   width: 135px;
-  margin-right: 150px;
 }
 
-.upper-section > div > span, .lower-section > div > span{
+.upper-section > div > div > span, .lower-section > div > div > span{
   color: #111;
   font-size: 1.125rem;
   font-weight: 700;
@@ -223,11 +251,8 @@ img[src*="rw1"], img[src*="rw2"], img[src*="rw3"]{
 footer{
   display: flex;
   margin-top: 116px;
+  justify-content: space-between;
   width: 100%;
-}
-
-.footer-title{
-  margin-right: 667px;
 }
 
 .contact-section{
@@ -243,4 +268,39 @@ footer{
 
 .contact-section .contact{
   margin: 0 95px 0 30px;
+}
+
+@media screen and (max-width:750px) {
+  .hidden {
+    display: none;
+  }
+
+  .fourth-hidden-column{
+    display: initial;
+  }
+
+  .different-photos{
+    grid-template-columns: 1fr 1fr;
+    
+  }
+
+  img[src*="cl3-rw3"] {
+    margin: 0;
+  }
+}
+
+@media screen and (max-width:365px){
+  .fourth-hidden-column{
+    display: none;
+  }
+
+  .hidden{
+    display: initial;
+
+  }
+
+  .different-photos{
+    grid-template-columns: 1fr;
+  }
+
 }
