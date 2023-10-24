@@ -1,0 +1,112 @@
+*{
+  box-sizing: border-box;
+}
+
+body{
+  margin: 0;
+  padding: 0;
+  height: 4241px;
+}
+
+.search-bar-section{
+  background-image: url(../lesson10-test/lesson10-images/first-photo.png);
+  height: 42.7vw;
+  width: 100%;
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: josefin sans, sans-serif;
+}
+
+.search-bar-section > div{
+  height: 38.8%;
+  width: 34.3%;
+}
+
+.title-subtitle-container{
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  row-gap: 11px;
+}
+
+.title-subtitle-container > h1{
+  color: #FFF;
+  text-align: center;
+  font-size: 3rem;
+  font-weight: 700;
+  letter-spacing: 4.8px;
+  text-transform: uppercase;
+  margin: 0;
+}
+
+.title-subtitle-container > h2{
+  color: #FFF;
+  text-align: center;
+  font-size: 1.375rem;
+  font-weight: 400;
+  letter-spacing: 6.82px;
+  margin: 0;
+}
+
+.search-bar{
+  width: 100%;
+  display: flex;
+  align-items: center;
+  margin: 48px 0 107px 0;
+}
+
+.search-bar > input {
+  height: 63px;
+  width: 77%;
+  border: none;
+  background-color: #FFF;
+  padding: 0;
+  text-align: center;
+
+}
+
+.search-bar > button{
+  height: 63px;
+  width: 22.2%;
+  padding: 0;
+  border: 1px solid #FFF; 
+  background-color:#5474FD;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  column-gap: 6px;
+
+}
+
+.search-bar > button > span {
+  color: #FFF;
+  text-align: center;
+  font-family: Aleo;
+  font-size: 0.875rem;
+  font-weight: 400;
+  line-height: 26px; /* 185.714% */
+  letter-spacing: 1.4px;
+  text-transform: uppercase;
+}
+
+.scroll-down{
+  display: flex;
+  flex-direction: column;
+  row-gap: 12px;
+  align-items: center;
+}
+
+.scroll-down > p {
+  margin: 0;
+  color: #FFF;
+  font-size: 0.875rem;
+  letter-spacing: 2.8px;
+
+}
+
+.scroll-down img {
+  width: 17px;
+  height: 11px;
+}
