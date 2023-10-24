@@ -277,3 +277,98 @@ img[src*="lines"]{
   font-family: Aleo;
   font-size: 2.25rem;
 }
+
+.locations{
+  width: 100%;
+}
+
+.upper-section{
+  background-image: url(../lesson10-test/lesson10-images/3rd-photo.png);
+  background-size: cover;
+  width: 100%;
+  height: 39.61vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.lower-section{
+  background-image: url(../lesson10-test/lesson10-images/4th-photo.png);
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 39.61vw;
+}
+
+.positioning{
+  height: 562px;
+  width: 58.4%;
+  display: flex;
+}
+
+.upper{
+  justify-content: start;
+  align-items: end;
+}
+
+.lower{
+  justify-content: end;
+  align-items: end;
+}
+
+.locations-content{
+  width: 48.9%;
+  height: 374px;
+  background-color:rgba(35, 35, 35, 0.8);
+  padding: 49px 30px 50px 30px;
+}
+
+.locations-content > span{
+  color: #E8E8E8;
+  font-family: Josefin Sans;
+  font-size: 1.25rem;
+  line-height: 26px; /* 130% */
+  letter-spacing: 1.5px;
+}
+
+.locations-content > h2{
+  color: #FFF;
+  font-family: Josefin Sans;
+  font-size: 1.25rem;
+  line-height: 26px; /* 130% */
+  text-transform: uppercase;
+  margin: 23px 0 0 0;
+}
+
+.locations-content > p {
+  color: #E8E8E8;
+  font-family: Josefin Sans;
+  font-size: 1rem;
+  line-height: 26px; /* 162.5% */
+  margin: 13px 0 46px 0;
+}
+
+.locations-content > .button-locations{
+  width: 228px;
+  height: 63px;
+  display: flex;
+  background-color:#5474FD;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+
+}
+
+.locations-content > .button-locations > span{
+  color: #FFF;
+  font-family: Aleo;
+  font-size: 1rem;
+  letter-spacing: 1.2px;
+  text-transform: uppercase;
+}
+
+
+
+
