@@ -5,7 +5,6 @@
 body{
   margin: 0;
   padding: 0;
-  height: 4241px;
 }
 
 .search-bar-section{
@@ -77,6 +76,7 @@ body{
   align-items: center;
   justify-content: center;
   column-gap: 6px;
+  cursor: pointer;
 
 }
 
@@ -109,4 +109,42 @@ body{
 .scroll-down img {
   width: 17px;
   height: 11px;
+}
+
+nav{
+  height: 83px;
+  background-color: #5474FD;
+  color: #FFF;
+  display: flex;
+  justify-content: center;
+  
+}
+
+.nav-content{
+  width: 61%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.nav-right{
+  display: flex;
+  column-gap: 12px;
+}
+
+.nav-right a{
+  width: 128px;
+  color: #FFF;
+  font-family: Aleo;
+  font-size: 0.875rem;
+  text-transform: uppercase;
+  }
+
+.nav-left span {
+  color: #FFF;
+  font-family: Josefin Sans;
+  font-size: 1.5rem;
+  font-weight: 700;
+  letter-spacing: 2.4px;
+  text-transform: uppercase;
 }
