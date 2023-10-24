@@ -80,6 +80,10 @@ body{
 
 }
 
+.search-bar > button:hover {
+  background-color: #768be9;
+}
+
 .search-bar > button > span {
   color: #FFF;
   text-align: center;
@@ -141,6 +145,10 @@ nav{
   text-decoration: none;
   }
 
+.nav-right a:hover{
+  text-decoration: underline;
+}  
+
 .nav-left span {
   color: #FFF;
   font-family: Josefin Sans;
@@ -201,6 +209,11 @@ nav{
   display: flex;
   justify-content: center;
   align-items: center;
+}
+
+.choose-us-content > aside > .button-choose-us:hover, .locations-content > .button-locations:hover{
+  border: 1.5px solid white;
+  cursor: pointer;
 }
 
 .choose-us-content > aside > .button-choose-us > span{
