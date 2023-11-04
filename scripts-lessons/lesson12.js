@@ -58,7 +58,7 @@ function calculateNextDay() {
       x.innerHTML = `${dateSplit[0]}/${dateSplit[1]}/${dateSplit[2]}`
     }
   }
-  if (Number(dateSplit[1]) < 12 && Number(dateSplit[1]) === 0o4 || Number(dateSplit[1]) === 0o6 || Number(dateSplit[1]) === 9 || Number(dateSplit[1]) === 11) {
+  if (Number(dateSplit[1]) < 12 && Number(dateSplit[1]) >= 1 && Number(dateSplit[1]) === 4 || Number(dateSplit[1]) === 6 || Number(dateSplit[1]) === 9 || Number(dateSplit[1]) === 11) {
       calculateDay(30)
   } else if(Number(dateSplit[1]) === 12) {
     if(Number(dateSplit[0]) === 31) {
@@ -70,12 +70,15 @@ function calculateNextDay() {
       dateSplit[0] = Number(dateSplit[0]) + 1;
       x.innerHTML = `${dateSplit[0]}/${dateSplit[1]}/${dateSplit[2]}`
     }
-  } else if(Number(dateSplit[1]) < 12 && Number(dateSplit[1]) === 0o1 || Number(dateSplit[1]) === 0o3 || Number(dateSplit[1]) === 0o5 || Number(dateSplit[1]) === 0o7 || Number(dateSplit[1]) === 8 || Number(dateSplit[1]) === 10) {
+  } else if(Number(dateSplit[1]) < 12 && Number(dateSplit[1]) >= 1 && Number(dateSplit[1]) === 1 || Number(dateSplit[1]) === 3 || Number(dateSplit[1]) === 5 || Number(dateSplit[1]) === 7 || Number(dateSplit[1]) === 8 || Number(dateSplit[1]) === 10) {
       calculateDay(31)
-  } else if(Number(dateSplit[1]) < 12 && Number(dateSplit[1]) === 0o2) {
+  } else if(Number(dateSplit[1]) < 12 && Number(dateSplit[1]) >= 1 && Number(dateSplit[1]) === 2) {
     if (Number(calculateLeap) % 4 === 0 || Number(calculateLeap) % 400 === 0) {
       calculateDay(29)
     } else {
       calculateDay(28)}
+  } else {
+    x.innerHTML = 'this is not a valid date.'
   }
 }
+
