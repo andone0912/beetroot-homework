@@ -13,7 +13,7 @@ document.querySelector('#circle').innerHTML = `The area of this circle is ${(314
 
 const distance = prompt('how far away is your destination?(km)'); 
 const time = prompt('In how much time do you want to get to your destination?(in minutes)');
-document.querySelector('#speed').innerHTML = `If you want to get to your destination that is ${distance}km away in ${time} minutes then you need to move at ${(((distance * 1000) / time) * 60) /1000}km/h`
+document.querySelector('#speed').innerHTML = `If you want to get to your destination that is ${distance}km away in ${time} minutes then you need to move at ${Math.round((((distance * 1000) / time) * 60) /1000)}km/h`
 
 const moneyUsd = prompt('convert from usd to eur(put usd here)');
 const moneyConvert = (moneyUsd * (0.944 * 1000)) / 1000;
