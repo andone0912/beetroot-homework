@@ -63,7 +63,7 @@ nav{
   margin:0;
 }
 
-.social-media > span {
+.social > span {
   width: 40px;
   height: 40px;
   display: flex;
@@ -452,4 +452,151 @@ main{
   padding: 16px 57px 17px 57px;
   border:1px solid black;
   margin-top: 60px;
+}
+
+.map{
+  width: 100%;
+  height: 700px;
+  background-image: url(../lesson15-test/Monticello-photos/map-image.png);
+  position: relative;
+}
+
+.map > img {
+ position: absolute;
+ left:45%;
+ top: 157px;
+ transform: translate(-50%,-50%); 
+}
+.title{
+  width: 770px;
+  height: 450px;
+  background-color: white;
+  position: absolute;
+  top: 100%;
+  left:50%;
+  transform: translate(-50%,-50%);
+}
+
+.title > div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 30px;
+  margin-top: 60px;
+}
+
+.title > div > span {
+  color: #2C4058;
+  font-family: Montserrat;
+  font-size: 44px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+
+.title > section > .contacts > span{
+  color: #000;
+  font-family: Montserrat;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 28px;
+}
+.title > section >.contacts >  span > i{
+  font-size: 18px;
+  line-height: 28px;
+  color:#7E5AFF; 
+}
+
+section{
+  display: flex;
+  margin-top: 42px;
+}
+
+.title > section > .contacts{
+  display: flex;
+  margin:0 54px 0 60px;
+  flex-direction: column;
+  gap: 30px;
+  align-items: start;
+}
+
+form{
+  display: flex;
+  flex-direction: column;
+  width: 310px;
+}
+
+#email{
+  color: #4B5562;
+  font-family: Montserrat;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 27px;
+  padding-top: 33px;
+  border: none;
+  border-top: 1px solid #2C4058;
+}
+
+label{
+  color: #000;
+  font-family: Montserrat;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 27px;
+  margin-bottom: 14px;
+}
+
+button{
+  width: 140px;
+  height: 50px;
+  border: 1px solid black;
+  align-self: end;
+  padding: 0;
+  margin-top: 44px;
+  cursor: pointer;
+}
+
+footer{
+  width: 1600px;
+  height: 549px;
+  margin: 0 auto;
+  background: linear-gradient(251deg, #7E5AFF -2.19%, #55B7FF 103.21%);
+}
+
+.overlay-photo-2{
+   background-image: url(../lesson15-test/Monticello-photos/background-photo-2.png);
+   width: 100%;
+   position: relative;
+   height: 100%;
+   background-repeat:no-repeat;
+}
+
+.footer-flex-container{
+  width:770px;
+  display: flex;
+  justify-content: space-between;
+  position: absolute;
+  top: 65%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.footer-left{
+  display: flex;
+  width: 241px;
+  gap: 41px;
+  flex-direction: column;
+}
+
+.footer-left > span{
+  color: #FFF;
+  font-family: Montserrat;
+  font-size: 14px;
+  font-weight: 400;
+}
+
+.footer-right{
+  display: flex;
+  gap: 20px;
+  
 }
