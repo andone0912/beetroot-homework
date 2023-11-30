@@ -398,3 +398,58 @@ main{
   font-weight: 400;
   margin-top: 6px;
 }
+
+.gallery{
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.gallery > div {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  align-items: center;
+  margin-top: 140px;
+}
+
+.gallery > div > span {
+  color: #2C4058;
+  text-align: center;
+  font-family: Montserrat;
+  font-size: 44px;
+  font-weight: 700;
+}
+
+ .gallery > .gallery-grid{
+  display: grid;
+  width: 1170px;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 10px;
+  margin-top: 89px;
+}
+
+.gallery-grid  img[src*="png"]{
+  width: 285px;
+  height: 214px;
+}
+
+.gallery-grid > div {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 10px;
+  
+}
+
+.see-more{
+  color: #000;
+  text-align: center;
+  font-family: Montserrat;
+  font-size: 14px;
+  font-weight: 400;
+  padding: 16px 57px 17px 57px;
+  border:1px solid black;
+  margin-top: 60px;
+}
