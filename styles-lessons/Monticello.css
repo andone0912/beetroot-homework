@@ -168,3 +168,118 @@ main{
   font-weight: 700;
   font-family: Montserrat;
 }
+
+.photos-text{
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  margin-top: 146px;
+}
+
+.upper-part, .lower-part{
+  display: flex;
+}
+.upper-part{
+  margin-left: 215px;
+  margin-bottom: 197px;
+}
+.lower-part{
+  margin-right: 215px;
+}
+.upper-part > img {
+  box-shadow: -215px -57px #55B7FF;
+}
+.lower-part > img {
+  box-shadow: 215px -57px #7E5AFF;
+}
+
+.text-right{
+  width: 470px;
+  margin-left: 70px;
+  display: flex;
+  flex-direction: column;
+}
+
+.text-left{
+  width: 476px;
+  margin-right: 64px;
+  margin-left: 215px;
+  display: flex;
+  flex-direction: column;
+}
+
+.common-text > span{
+  color: #2C4058;
+  font-family: Montserrat;
+  font-size: 22px;
+  font-weight: 400;
+}
+
+.common-text > h3 {
+  color: #2C4058;
+  font-family: Montserrat;
+  font-size: 44px;
+  font-weight: 700;
+  margin: 0 0 19px 0;
+}
+
+.common-text > p {
+  color: #2C4058;
+  font-family:'Open Sans', sans-serif;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 30px;
+  margin: 0;
+}
+
+.common-text > .button-details{
+  width: 190px;
+  height: 50px;
+  cursor: pointer;
+  border: 1px solid #2C4058;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 41px;
+  }
+
+.common-text > .button-details > span{
+  color: #000;
+  font-family: Montserrat;
+  font-size: 14px;
+  text-align: center;
+  font-weight: 400;
+}
+
+.common-text > .location{
+  color: #000;
+  font-family:'Open Sans', sans-serif;
+  font-size: 15px;
+  font-style: italic;
+  font-weight: 400;
+  margin-top: 60px;
+}
+
+.common-text{
+  margin-top: 94px;
+}
+
+.location  img {
+  margin-right: 10px;
+}
+
+.news{
+  width: 1600px;
+  height: 1035px;
+  background: linear-gradient(237deg, #24CCFA 11.16%, #3C7FD4 89.18%);
+  margin-top: 140px;
+  position: relative;
+}
+
+.overlay-photo{
+  background-image: url(../lesson15-test/Monticello-photos/background-photo.png);
+  width: 100%;
+  position: absolute;
+  bottom: 0;
+  height: 590px;
+}
