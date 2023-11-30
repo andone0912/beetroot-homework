@@ -1,0 +1,170 @@
+*{
+  box-sizing: border-box;
+}
+
+body{
+  margin: 0;
+}
+
+header{
+  height: 800px;
+  width: 1600px;
+  background: linear-gradient(243deg, #7E5AFF 16.9%, #55B7FF 83.27%);
+  margin: 0 auto;
+}
+
+.background-photo{
+  width: 100%;
+  height: 100%;
+  background-image: url(../lesson15-test/Monticello-photos/photo-1.png);
+}
+
+nav{
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.nav-bar{
+  width: 1170px;
+  display: flex;
+  margin-top:53px ;
+  align-items: center;
+}
+
+.nav-bar > img {
+  margin-right: 144px;
+}
+
+.nav-bar > div{
+  width: 515px;
+  display: flex;
+  justify-content: space-between;
+  margin-right: 110px;
+}
+
+.nav-bar > div > span{
+  display: flex;
+  align-items: center;
+  font-family: 'Source Code Pro', monospace;
+  color: #FFF;
+  font-size: 14px;
+
+}
+
+.nav-bar img[src*="circle"]{
+  margin-right: 14px;
+}
+
+.nav-bar > .social-media{
+  display: flex;
+  width: auto;
+  gap:20px;
+  margin:0;
+}
+
+.social-media > span {
+  width: 40px;
+  height: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid white;
+  border-radius: 50%;
+
+}
+
+.title-section{
+  width: 1207px;
+  height: 210px;
+  margin: 188px 52px 0 341px;
+  display: flex;
+  align-items: center;
+  gap: 280px;
+
+}
+.title-section > div{
+  width: 918px;
+}
+
+h1{
+  color: #FFF;
+  font-family: Montserrat;
+  font-size: 80px;
+  letter-spacing: 8px;
+  font-weight: 700;
+  margin: 0;
+}
+
+.title-section > div > h2{
+  text-align: center;
+  color: #FFF;
+  font-family: Montserrat;
+  font-size: 18px;
+  letter-spacing: 5.4px;
+  font-weight: 400;
+  margin:20px 0 0 0 ;
+}
+
+.title-section > aside{
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  width: 10px;
+  justify-content: space-between;
+}
+
+.arrow-down-button{
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  margin-top: 205px;
+  height: 40px;
+
+}
+
+.arrow-down-button > span {
+  width: 40px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 0.5px solid white;
+  border-radius: 50%;
+}
+
+.arrow-down-button > span > img{
+  padding: 3px 0 0 0;
+}
+
+main{
+  width: 1600px;
+  margin: 0 auto;
+}
+
+.what-we-do{
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 30px;
+  margin-top: 100px;
+}
+
+.little-line{
+  width: 100px;
+  height: 1px;
+  margin: 0;
+  border: 0;
+  background: #2C4058;
+  color: #2C4058;
+}
+
+.what-we-do > span {
+  color: #2C4058;
+  text-align: center;
+  font-size: 44px;
+  font-weight: 700;
+  font-family: Montserrat;
+}
