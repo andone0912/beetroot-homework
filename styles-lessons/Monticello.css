@@ -274,6 +274,10 @@ main{
   background: linear-gradient(237deg, #24CCFA 11.16%, #3C7FD4 89.18%);
   margin-top: 140px;
   position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
 }
 
 .overlay-photo{
@@ -282,4 +286,115 @@ main{
   position: absolute;
   bottom: 0;
   height: 590px;
+}
+
+.news-content{
+  display: flex;
+  align-items: center;
+  z-index: 1;
+  gap: 60px;
+}
+
+.news-title > hr{
+  width: 100px;
+  height: 1px;
+  margin: 0;
+  border: 0;
+  color: white;
+  background-color: white;
+}
+
+.news-title{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 30px;
+  margin-bottom: 89px;
+}
+.news-title > span {
+  color: #FFF;
+  text-align: center;
+  font-family: Montserrat;
+  font-size: 44px;
+  font-weight: 700;
+  letter-spacing: 3px;
+}
+
+.news-content > div{
+  display: flex;
+  gap: 30px;
+}
+
+.arrow-right, .arrow-left{
+  height: 40px;
+  width: 40px;
+  border: 0.5px solid white;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.arrow-right > img, .arrow-left > img {
+  width: 6px;
+  height: 10px;
+}
+
+.content-cards{
+  height: 514px;
+}
+
+.content-cards > div {
+  height: 274px;
+  width: 370px;
+  background-color: white;
+  margin-top: -4px;
+  padding:23px 20px 30px 20px
+}
+
+.content-cards > div > p{
+  margin: 0;
+  color: #2C4058;
+  font-family:'Open Sans', sans-serif;
+  font-size: 18px;
+  font-weight: 400;
+  margin-top: 15px;
+
+}
+
+.content-cards > div > span {
+  color: #2C4058;
+  font-family: Montserrat;
+  font-size: 22px;
+  font-weight: 700;
+}
+
+.news-profile{
+  display: flex;
+  align-items: center;
+  margin-top: 39px;
+}
+
+.news-profile > img{
+  border-radius: 50%;
+  margin-right: 20px;
+}
+
+.news-profile > div {
+  display: flex;
+  flex-direction: column;
+}
+
+.news-profile > div > span{
+  color: #2C4058;
+  font-family: Montserrat;
+  font-size: 18px;
+  font-weight: 400;
+}
+.news-profile > div > span:nth-child(2){
+  color: #55B7FF;
+  font-family: Montserrat;
+  font-size: 14px;
+  font-weight: 400;
+  margin-top: 6px;
 }
