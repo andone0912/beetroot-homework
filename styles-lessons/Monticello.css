@@ -34,6 +34,12 @@ nav{
 
 .nav-bar > img {
   margin-right: 144px;
+  cursor: pointer;
+}
+
+.nav-bar > img:hover{
+  transform: scale(1.05);
+  transition: 0.3s;
 }
 
 .nav-bar > div{
@@ -71,7 +77,6 @@ nav{
   align-items: center;
   border: 1px solid white;
   border-radius: 50%;
-
 }
 
 .title-section{
@@ -80,23 +85,34 @@ nav{
   margin: 188px 52px 0 341px;
   display: flex;
   align-items: center;
-  gap: 280px;
-
-}
-.title-section > div{
-  width: 918px;
+  gap:200px;
 }
 
-h1{
+.title-section > #verticalSlider > div{
+  width: auto;
+}
+
+#verticalSlider{
+width: 1000px;
+cursor: pointer;
+}
+
+.title-section div > h1{
   color: #FFF;
   font-family: Montserrat;
   font-size: 80px;
   letter-spacing: 8px;
   font-weight: 700;
   margin: 0;
+  width: 1000px;
+  text-align: center;
 }
 
-.title-section > div > h2{
+.dots , .nav-bar > img, .nav-bar > div > span, .arrow-down-button > span > img, .upper-part > img, .lower-part > img, .arrow-left > img, .arrow-right > img, .gallery-grid, .footer-flex-container, iframe{
+  user-select: none;
+}
+
+.title-section  div > h2{
   text-align: center;
   color: #FFF;
   font-family: Montserrat;
@@ -131,12 +147,27 @@ h1{
   justify-content: center;
   border: 0.5px solid white;
   border-radius: 50%;
+  cursor: pointer;
 }
 
 .arrow-down-button > span > img{
   padding: 3px 0 0 0;
+  
 }
 
+.arrow-down-button > span:hover , .arrow-left:hover{
+  transform: scale(1.1);
+  transition: 0.3s;
+  padding-right: 2px;
+}
+.arrow-right:hover{
+  padding-left: 2px;
+  transform: scale(1.1);
+  transition: 0.3s;
+}
+.arrow-down-button > span:active, .arrow-left:active, .arrow-right:active{
+  box-shadow: 0 0 20px white;
+}
 main{
   width: 1600px;
   margin: 0 auto;
@@ -242,6 +273,10 @@ main{
   align-items: center;
   margin-top: 41px;
   }
+  
+  .button-details:hover , .see-more:hover, .submit-button:hover{
+    box-shadow:0px 0px 0px 1px #2C4058;
+  }
 
 .common-text > .button-details > span{
   color: #000;
@@ -320,9 +355,14 @@ main{
   letter-spacing: 3px;
 }
 
-.news-content > div{
+#slider{
   display: flex;
+  width: 1170px;
   gap: 30px;
+}
+
+#slider > div{
+  cursor: pointer;
 }
 
 .arrow-right, .arrow-left{
@@ -332,13 +372,25 @@ main{
   border-radius: 50%;
   display: flex;
   justify-content: center;
+  cursor: pointer;
   align-items: center;
 }
 
 .arrow-right > img, .arrow-left > img {
   width: 6px;
   height: 10px;
+  cursor: pointer;
 }
+
+.arrow-left{
+  padding-right: 2px;
+}
+
+.arrow-right{
+  padding-left:2px;
+}
+
+
 
 .content-cards{
   height: 514px;
@@ -452,20 +504,18 @@ main{
   padding: 16px 57px 17px 57px;
   border:1px solid black;
   margin-top: 60px;
+  cursor: pointer;
 }
 
 .map{
   width: 100%;
   height: 700px;
-  background-image: url(../lesson15-test/Monticello-photos/map-image.png);
   position: relative;
 }
 
-.map > img {
- position: absolute;
- left:45%;
- top: 157px;
- transform: translate(-50%,-50%); 
+.map > iframe{
+  width: 100%;
+  height: 100%;
 }
 .title{
   width: 770px;
@@ -475,6 +525,7 @@ main{
   top: 100%;
   left:50%;
   transform: translate(-50%,-50%);
+  z-index: 1;
 }
 
 .title > div {
@@ -527,7 +578,6 @@ form{
 }
 
 #email{
-  color: #4B5562;
   font-family: Montserrat;
   font-size: 18px;
   font-weight: 400;
@@ -535,6 +585,12 @@ form{
   padding-top: 33px;
   border: none;
   border-top: 1px solid #2C4058;
+}
+
+#name{ 
+  font-family: Montserrat;
+  font-size: 18px;
+  border: none;
 }
 
 label{
@@ -546,7 +602,7 @@ label{
   margin-bottom: 14px;
 }
 
-button{
+.submit-button{
   width: 140px;
   height: 50px;
   border: 1px solid black;
@@ -600,3 +656,26 @@ footer{
   gap: 20px;
   
 }
+.footer-right > span:hover{
+  cursor: pointer;
+  transform: scale(1.1);
+  transition: 0.3s;
+}
+.footer-right > span:nth-child(3):hover{
+  padding:0 2px 2px 0;
+}
+
+.footer-left > img:hover {
+  transform: scale(1.1);
+  transition: 0.3s;
+  cursor: pointer;
+
+}
+
+.nav-bar > div > span:hover{
+  transform: scale(1.1);
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+

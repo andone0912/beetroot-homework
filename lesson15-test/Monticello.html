@@ -1,57 +1,82 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="../styles-lessons/Monticello.css">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Montserrat&family=Open+Sans&family=Source+Code+Pro&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat&family=Open+Sans&family=Source+Code+Pro&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" type="text/css" href="slick/slick.css" />
+  <link rel="stylesheet" type="text/css" href="slick/slick-theme.css" />
   <script src="https://kit.fontawesome.com/89eb68d74a.js" crossorigin="anonymous"></script>
+  <script src="../scripts-lessons/Monticello.js" defer></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+  <script type="text/javascript" src="slick/slick.min.js"></script>
   <style>
-    ::-webkit-input-placeholder { 
+    ::-webkit-input-placeholder {
       font-family: 'Montserrat';
     }
-    </style>
-  <script src="../scripts-lessons/Monticello.js" defer></script>
+  </style>
   <title>Monticello</title>
 </head>
+
 <body>
   <header>
-  <div class="background-photo">
-    <nav>
-      <div class="nav-bar">
-        <img src="../lesson15-test/Monticello-photos/logo-monticello.png" alt="logo">
-        <div>
-          <span><img src="../lesson15-test/Monticello-photos/full-circle.svg">ABOUT US</span>
-          <span><img src="../lesson15-test/Monticello-photos/hollow-circle.svg">PROJECTS</span>
-          <span><img src="../lesson15-test/Monticello-photos/hollow-circle.svg">NEWS</span>
-          <span><img src="../lesson15-test/Monticello-photos/hollow-circle.svg">CONTACT</span>
+    <div class="background-photo">
+      <nav>
+        <div class="nav-bar">
+          <img src="../lesson15-test/Monticello-photos/logo-monticello.png" alt="logo">
+          <div>
+            <span class="nb-1" onclick="changeDot('1')"><img src="../lesson15-test/Monticello-photos/full-circle.svg">ABOUT US</span>
+            <span class="nb-2" onclick="changeDot('2')"><img src="../lesson15-test/Monticello-photos/hollow-circle.svg">PROJECTS</span>
+            <span class="nb-3" onclick="changeDot('3')"><img src="../lesson15-test/Monticello-photos/hollow-circle.svg">NEWS</span>
+            <span class="nb-4" onclick="changeDot('4')"><img src="../lesson15-test/Monticello-photos/hollow-circle.svg">CONTACT</span>
+          </div>
+          <div class="social-media social">
+            <span><img src="../lesson15-test/Monticello-photos/facebook.png" alt="facebook logo"></span>
+            <span><img src="../lesson15-test/Monticello-photos/twitter.png" alt="twitter logo"></span>
+            <span><img src="../lesson15-test/Monticello-photos/instagram.png" alt="instagram logo"></span>
+          </div>
         </div>
-        <div class="social-media social">
-          <span><img src="../lesson15-test/Monticello-photos/facebook.png" alt=""></span>
-          <span><img src="../lesson15-test/Monticello-photos/twitter.png" alt=""></span>
-          <span><img src="../lesson15-test/Monticello-photos/instagram.png" alt=""></span>
+      </nav>
+      <section class="title-section">
+        <div id="verticalSlider">
+          <div class="vs-1">
+            <h1>SIMPLE & MODERN</h1>
+            <h2>WE MAKE THE WORLD BEAUTIFUL EVERYDAY</h2>
+          </div>
+          <div class="vs-2">
+            <h1>MONTICELLO</h1>
+            <h2>MAKE THE RIGHT CHOICE</h2>
+          </div>
+          <div class="vs-3">
+            <h1>QUICK & EASY</h1>
+            <h2>BEST IN THE BUSSINESS</h2>
+          </div>
+          <div class="vs-4">
+            <h1>TRUSTED</h1>
+            <h2>OUR COMPANY IS TRUSTED BY COUNTLESS CUSTOMERS</h2>
+          </div>
+          <div id="vs-5">
+            <h1>BEST DEALS</h1>
+            <h2>LET US HELP YOU MAKE YOUR DREAMS COME TRUE</h2>
+          </div>
         </div>
+        <aside class="dots">
+          <img src="../lesson15-test/Monticello-photos/full-circle.svg">
+          <img src="../lesson15-test/Monticello-photos/hollow-circle.svg">
+          <img src="../lesson15-test/Monticello-photos/hollow-circle.svg">
+          <img src="../lesson15-test/Monticello-photos/hollow-circle.svg">
+          <img src="../lesson15-test/Monticello-photos/hollow-circle.svg">
+        </aside>
+      </section>
+      <div class="arrow-down-button" onclick="dotsMove()">
+        <span><img src="../lesson15-test/Monticello-photos/arrow-down.png" alt="arrow down symbol"></span>
       </div>
-    </nav>
-    <section class="title-section">
-      <div>
-        <h1>SIMPLE & MODERN</h1>
-        <h2>WE MAKE THE WORLD BEAUTIFUL EVERYDAY</h2>
-      </div>
-      <aside>
-        <img src="../lesson15-test/Monticello-photos/full-circle.svg" alt="">
-        <img src="../lesson15-test/Monticello-photos/hollow-circle.svg" alt="">
-        <img src="../lesson15-test/Monticello-photos/hollow-circle.svg" alt="">
-        <img src="../lesson15-test/Monticello-photos/hollow-circle.svg" alt="">
-        <img src="../lesson15-test/Monticello-photos/hollow-circle.svg" alt="">
-      </aside>
-    </section>
-    <div class="arrow-down-button">
-      <span><img src="../lesson15-test/Monticello-photos/arrow-down.png" alt=""></span>
     </div>
-  </div>
   </header>
   <main>
     <section class="what-we-do">
@@ -60,24 +85,28 @@
     </section>
     <section class="photos-text">
       <div class="upper-part">
-        <img src=".//Monticello-photos/building-1.png" alt="">
+        <img src=".//Monticello-photos/building-1.png" alt="building">
         <div class="text-right common-text">
           <span>ONE WORLD</span>
           <h3>TRADE CENTER</h3>
-          <p>Increasing prosperity in our lives can be accomplished by having the right frame of mind. The truth is, our thoughts are very powerful.</p>
+          <p>Increasing prosperity in our lives can be accomplished by having the right frame of mind. The truth is, our
+            thoughts are very powerful.</p>
           <span class="button-details"><span>MORE DETAILS</span></span>
-          <span class="location"><span><img src="../lesson15-test/Monticello-photos/location-ping.png" alt="location ping"></span>New York City, United States - 1776 feet </span>
+          <span class="location"><span><img src="../lesson15-test/Monticello-photos/location-ping.png"
+                alt="location ping"></span>New York City, United States - 1776 feet </span>
         </div>
       </div>
       <div class="lower-part">
-        <div class="text-left common-text"> 
+        <div class="text-left common-text">
           <span>INTERNATIONAL</span>
           <h3>COMMERCE CENTRE</h3>
-          <p>Successful businesses have many things in common, today we'll look at the big 'R' of recognition and how a digital advertising network may help.</p>
+          <p>Successful businesses have many things in common, today we'll look at the big 'R' of recognition and how a
+            digital advertising network may help.</p>
           <span class="button-details"><span>MORE DETAILS</span></span>
-          <span class="location"><span><img src="../lesson15-test/Monticello-photos/location-ping.png" alt="location ping"></span>Hong Kong - 1588 feet</span>
+          <span class="location"><span><img src="../lesson15-test/Monticello-photos/location-ping.png"
+                alt="location ping"></span>Hong Kong - 1588 feet</span>
         </div>
-        <img src="../lesson15-test/Monticello-photos/building-2.png" alt="">
+        <img src="../lesson15-test/Monticello-photos/building-2.png" alt="building">
       </div>
     </section>
     <section class="news">
@@ -87,38 +116,84 @@
         <span>LATEST NEWS</span>
       </div>
       <div class="news-content">
-        <div class="arrow-left"><img src="../lesson15-test/Monticello-photos/arrow-left.png" alt=""></div>
-        <div>
-          <div class="content-cards">
-            <img src="../lesson15-test/Monticello-photos/news-photo-1.png" alt="">
+        <div class="arrow-left"><img src="../lesson15-test/Monticello-photos/arrow-left.png" alt="arrow left symbol">
+        </div>
+        <div id="slider">
+          <div class="content-cards 1">
+            <img src="../lesson15-test/Monticello-photos/news-photo-1.png" alt="building">
+            <div>
+              <span>SEE THE UNMATCHED BEAUTY OF THE GREAT.</span>
+              <p>Free directories: directories are perfect for customers that are searching for...</p>
+              <div class="news-profile">
+                <img src="../lesson15-test/Monticello-photos/news-profile-1.png"
+                  alt="Alja Brun the arhitect behind this building">
+                <div>
+                  <span>ALJA BRUN</span>
+                  <span>20 Jan 2020</span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="content-cards 2">
+            <img src="../lesson15-test/Monticello-photos/news-photo-2.png" alt="building">
+            <div>
+              <span>EFFECTIVE ADVERTISING POINTERS.</span>
+              <p>Having a home based business is a wonderful asset to your life...</p>
+              <div class="news-profile">
+                <img src="../lesson15-test/Monticello-photos/news-profile-2.png"
+                  alt="Dominic Freeman the arhitect behind this building">
+                <div>
+                  <span>DOMINIC FREEMAN</span>
+                  <span>13 Dec 2019</span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="content-cards 3">
+            <img src="../lesson15-test/Monticello-photos/news-photo-3.png" alt="building">
+            <div>
+              <span>HYPNOTIZE YOURSELF INTO THE GHOST.</span>
+              <p>There are many things that are important to catalog design...</p>
+              <div class="news-profile">
+                <img src="../lesson15-test/Monticello-photos/news-profile-3.png"
+                  alt="Alice Ward the arhitect behind this building">
+                <div>
+                  <span>ALICE WARD</span>
+                  <span>30 Nov 2019</span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="content-cards 1">
+            <img src="../lesson15-test/Monticello-photos/news-photo-1.png" alt="building">
             <div>
               <span>SEE THE UNMATCHED BEAUTY OF THE GREAT.</span>
               <p>Free directories: directories are perfect for customers that are searching for...</p>
               <div class="news-profile">
                 <img src="../lesson15-test/Monticello-photos/news-profile-1.png" alt="">
                 <div>
-                <span>ALJA BRUN</span>
-                <span>20 Jan 2020</span>
+                  <span>ALJA BRUN</span>
+                  <span>20 Jan 2020</span>
                 </div>
               </div>
             </div>
           </div>
-          <div class="content-cards">
-            <img src="../lesson15-test/Monticello-photos/news-photo-2.png" alt="">
+          <div class="content-cards 2">
+            <img src="../lesson15-test/Monticello-photos/news-photo-2.png" alt="building">
             <div>
               <span>EFFECTIVE ADVERTISING POINTERS.</span>
               <p>Having a home based business is a wonderful asset to your life...</p>
               <div class="news-profile">
                 <img src="../lesson15-test/Monticello-photos/news-profile-2.png" alt="">
                 <div>
-                <span>DOMINIC FREEMAN</span>
-                <span>13 Dec 2019</span>
+                  <span>DOMINIC FREEMAN</span>
+                  <span>13 Dec 2019</span>
                 </div>
               </div>
             </div>
           </div>
-          <div class="content-cards">
-            <img src="../lesson15-test/Monticello-photos/news-photo-3.png" alt="">
+          <div class="content-cards 3">
+            <img src="../lesson15-test/Monticello-photos/news-photo-3.png" alt="building">
             <div>
               <span>HYPNOTIZE YOURSELF INTO THE GHOST.</span>
               <p>There are many things that are important to catalog design...</p>
@@ -132,7 +207,8 @@
             </div>
           </div>
         </div>
-        <div class="arrow-right"><img src="../lesson15-test/Monticello-photos/arrow-right.png" alt=""></div>
+        <div class="arrow-right"><img src="../lesson15-test/Monticello-photos/arrow-right.png" alt="arrow right symbol">
+        </div>
       </div>
       <div class="news-dots"></div>
     </section>
@@ -142,15 +218,14 @@
         <span>GALLERY</span>
       </div>
       <div class="gallery-grid">
-        <img src="../lesson15-test/Monticello-photos/gallery-photo-1.jpg" width="580px"
-        height="438px" alt="">
+        <img src="../lesson15-test/Monticello-photos/gallery-photo-1.jpg" width="580px" height="438px" alt="building">
         <div>
-        <img src="../lesson15-test/Monticello-photos/gallery-photo-2.png" alt="">
-        <img src="../lesson15-test/Monticello-photos/gallery-photo-3.png" alt="">
+          <img src="../lesson15-test/Monticello-photos/gallery-photo-2.png" alt="building">
+          <img src="../lesson15-test/Monticello-photos/gallery-photo-3.png" alt="building">
         </div>
         <div>
-        <img src="../lesson15-test/Monticello-photos/gallery-photo-4.png" alt="">
-        <img src="../lesson15-test/Monticello-photos/gallery-photo-5.png" alt="">
+          <img src="../lesson15-test/Monticello-photos/gallery-photo-4.png" alt="building">
+          <img src="../lesson15-test/Monticello-photos/gallery-photo-5.png" alt="building">
         </div>
       </div>
       <span class="see-more">
@@ -158,24 +233,27 @@
       </span>
     </section>
     <section class="map">
-      <img src="../lesson15-test/Monticello-photos/Pin.svg" alt="">
+      <iframe
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d48415.71896933864!2d-73.88467087580301!3d40.67435595972745!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c24416947c2109%3A0x82765c7404007886!2sBrooklyn%2C%20New%20York%2C%20Statele%20Unite%20ale%20Americii!5e0!3m2!1sro!2sro!4v1701964469784!5m2!1sro!2sro"
+        width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+        referrerpolicy="no-referrer-when-downgrade"></iframe>
       <div class="title">
         <div>
-        <hr class="little-line">
-        <span>GET IN TOUCH</span>
+          <hr class="little-line">
+          <span>GET IN TOUCH</span>
         </div>
         <section>
-        <div class="contacts">
-          <span><i class="fa-solid fa-location-dot"></i> 91 Nolan Extensions Suite 670</span>
-          <span><i class="fa-solid fa-phone"></i> +001 356-868-2454</span>
-          <span><i class="fa-solid fa-envelope"></i> montichello@service.com</span>
-          <span><i class="fa-regular fa-clock"></i> From 07:05AM to 19:30PM</span>
-        </div>
-        <form action="get">
-          <label for="email">Mollie Medina</label>
-          <input type="email" id="email" name="email" placeholder="EMAIL" class="email">
-          <button type="submit">SUBMIT</button>
-        </form>
+          <div class="contacts">
+            <span><i class="fa-solid fa-location-dot"></i> 91 Nolan Extensions Suite 670</span>
+            <span><i class="fa-solid fa-phone"></i> +001 356-868-2454</span>
+            <span><i class="fa-solid fa-envelope"></i> montichello@service.com</span>
+            <span><i class="fa-regular fa-clock"></i> From 07:05AM to 19:30PM</span>
+          </div>
+          <form action="get">
+            <input type="text" id="name" name="name" placeholder="NAME">
+            <input type="email" id="email" name="email" placeholder="EMAIL" class="email">
+            <button type="submit" class="submit-button">SUBMIT</button>
+          </form>
         </section>
       </div>
     </section>
@@ -196,4 +274,5 @@
     </div>
   </footer>
 </body>
+
 </html>
