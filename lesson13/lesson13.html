@@ -4,22 +4,54 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <script src="../scripts-lessons/lesson13.js" defer></script>
+  <style>
+    .ten-numbers{
+      width: 300px;
+    }
+  </style>
   <title>lesson</title>
 </head>
 <body>
+  <p> calculate the sum from 1 to the number you type in</p>
   <input type="text" id="number" placeholder="type a number">
   <button onclick="calculateArray()">calculate</button>
-  <div id="sum" on></div>
-  <div></div>
+  <div id="sum"></div>
+  <p> find the larget divisor between the 2 numbers you type in</p>
   <input type="text" placeholder="first number" id="first-number">
   <input type="text" placeholder="second number" id="second-number">
   <button onclick="largestDivisor()">calculate</button>
   <div id="largest-divisor"></div>
+  <p> find all the divisors of the number you type in</p>
   <input type="text" placeholder="number to divide" id="number-to-divide">
   <button onclick="calculateAllDivisors()">calculate</button>
   <div id="all-divisors"></div>
+  <p> count the digits of the number you type in</p>
   <input type="text" placeholder="type in a number" id="count-digits">
   <button onclick="placeDiv()">click</button>
-  <div id="number-digits"></div>  
+  <div id="number-digits"></div> 
+  <p> finds out which numbers are negative, positive, odd ,even and if your numbers list has any 0's</p>
+  <input type="text" placeholder="type in 10 numbers separated by space" id="ten-numbers" class="ten-numbers">
+  <button onclick="decideNumbers()">calculate</button>
+  <div id="list">
+    <ul>
+      <li>does this list have zeroes?:<span id="zero"></span></li>
+      <li>list of all positive numbers: <span id="positive"></span> </li>
+      <li>list of all negative numbers: <span id="negative"></span> </li>
+      <li>list of all even numbers: <span id="even"></span></li>
+      <li>list of all odd numbers: <span id="odd"></span> </li>
+    </ul>
+  </div>
+  <p> calculates anything you put in</p>
+  <input type="text" placeholder="first number" id="n1">
+  <input type="text" placeholder="symbol" id="symbol">
+  <input type="text" placeholder="second number" id="n2">
+  <button onclick="randomCalculation()">calculate</button>
+  <div class="answer"></div>
+  <p>moves number by the amount you type in</p>
+  <input type="number" placeholder="number list" id="list">
+  <input type="text" placeholder="by how many numbers to move it by" id="move-by">
+  <button id="calc" onclick="moveNumbers()">calculate</button>
+  <div class="oldList"></div>
+  <div class="newList"></div>
 </body>
 </html>
